@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#mainSection {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mainSection .box {
+    position: relative;
+    background: linear-gradient(45deg, #262527, #0f110fa1, #706f7080);
+    margin: 10px;
+    border: 2px solid #707572;
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+}
+#mainSection .box .branding .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+}
+#mainSection .box .branding .logo img {
+    width: 100px;
+    height: 100px;
+    background-color: #1ae969;
+    border: 2px solid #00ffbf;
+    border-radius: 50%;
+    padding: 5px;
+}
+#mainSection .box .branding .heading {
+    width: 100%;
+    height: auto;
+    margin: 8px;
+}
+#mainSection .box .branding .heading h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #edf1ef;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#formSection {
+    width: 100%;
+    background-color: #8112e9a4;
+    padding: 2px;
+}
+#formSection .inputWrap {
+    position: relative;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#formSection  .inputWrap input[type="text"] {
+    width: 75%;
+    left: 0;
+    background: transparent;
+    outline: none;
+    border: 2px solid #ddd;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 20px 0 0 20px;
+    border-right: transparent;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#formSection  .inputWrap input::placeholder {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+#formSection  .inputWrap input[type=submit] {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    background-color: #b7bbba;
+    outline: none;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    border-left: transparent;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+#formSection  .inputWrap input[type=submit]:hover {
+    background-color: #e20e5f;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+#listSection {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+}
+#listSection .listBox {
+    width: auto;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#listSection .listBox ul li {
+    list-style: none;
+}
